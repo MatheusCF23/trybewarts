@@ -18,13 +18,13 @@ form {
   display: flex;
 }
 
-main{
+main {
   display: flex;
 }
 
 #evaluation-form {
-  display: flex;
   width: 675px;
+  display: flex;
   flex-direction: column;
 }
 
