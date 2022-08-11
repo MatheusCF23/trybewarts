@@ -44,14 +44,39 @@
 
 main {
   display: flex;
+  justify-content: space-around;
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-top: 20px
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+textarea {
+  resize: none;
+}
+
+.eval-input {
+  width: 48%;
+}
+
+.field-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  width: 85%;
 }

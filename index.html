@@ -22,15 +22,22 @@
     </header>
     <main>
         <form action="" id="evaluation-form">
-            <input id="input-name" placeholder="Nome" type="text">Nome
-            <input id="input-lastname" placeholder="Sobrenome" type="text">Sobrenome
-            <input id="input-email" placeholder="Email" type="email">email
-            <select name="" id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
+            <div class="field-container">
+                <input class="eval-input" id="input-name" placeholder="Nome" type="text">
+                <input class="eval-input" id="input-lastname" placeholder="Sobrenome" type="text">
+            </div>
+            <div class="field-container">
+                <input class="eval-input" id="input-email" placeholder="Email" type="email">
+                <div class="eval-input select-container">
+                    <label class="label" for="house">Casa</label>
+                    <select name="house" id="house">
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </div>
+            </div>
             <section>
                 <label id="label-family">Qual sua família?</label>
                 <label for="Fron">
