@@ -8,13 +8,13 @@ form {
   width: 675px;
 }
 
-.header{
+.header {
   display: flex;
   background-color: rgb(50, 167, 145);
   height: 100px;
 }
 
-.trybewarts-login{
+.trybewarts-login {
   display: flex;
 }
 
@@ -22,12 +22,12 @@ main{
   display: flex;
 }
 
-#evaluation-form{
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
 }
