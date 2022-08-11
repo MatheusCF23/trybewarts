@@ -85,3 +85,26 @@ select {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+#nota {
+  display: flex;
+  justify-content: space-between;
+}
+
+#informacoes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#submit-btn {
+  width: max-content;
+  padding: 2px 15px;
+  align-self: flex-end;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+}

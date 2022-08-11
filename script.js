@@ -10,3 +10,18 @@ function loginTryber() {
 }
 
 document.getElementById('loginBTN').addEventListener('click', loginTryber);
+
+for(let index=1; index<11; index+=1) {
+    let div = document.createElement('div');
+    document.getElementById('nota').appendChild(div);
+    let input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'rate';
+    input.id = 'rate'+index;
+    input.value = index;
+    div.appendChild(input);
+    let label = document.createElement('label');
+    label.setAttribute('for', 'rate'+index);
+    label.innerText = index;
+    div.appendChild(label);
+}
