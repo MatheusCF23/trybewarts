@@ -9,4 +9,4 @@ function loginTryber() {
     }
 }
 
-document.getElementById('login').addEventListener('click', loginTryber);
+document.getElementById('loginBTN').addEventListener('click', loginTryber);
