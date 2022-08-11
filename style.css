@@ -104,7 +104,7 @@ select {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   padding: 15px;
 }
