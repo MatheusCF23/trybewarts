@@ -22,11 +22,11 @@
     </header>
     <main>
         <form action="" id="evaluation-form">
-            <div class="field-container">
+            <div class="container">
                 <input class="eval-input" id="input-name" placeholder="Nome" type="text">
                 <input class="eval-input" id="input-lastname" placeholder="Sobrenome" type="text">
             </div>
-            <div class="field-container">
+            <div class="container">
                 <input class="eval-input" id="input-email" placeholder="Email" type="email">
                 <div class="eval-input select-container">
                     <label class="label" for="house">Casa</label>
@@ -38,40 +38,52 @@
                     </select>
                 </div>
             </div>
-            <section>
-                <label id="label-family">Qual sua família?</label>
-                <label for="Fron">
-                    <input id="Fron" type="radio" name="family" value="Frontend"> Frontend
-                </label>
-                <label for="Bac">
-                    <input id="Bac" type="radio" name="family" value="Backend"> Backend
-                </label>
-                <label for="Ful">
-                    <input id="Ful" type="radio" name="family" value="FullStack"> FullStack
-                </label>
-            </section>
-            <section>
-                <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-                <label for="Ho">
-                    <input id="Ho" type="checkbox" class="subject" value="HoFs"> Hofs
-                </label>
-                <label for="Je">
-                    <input id="Je" type="checkbox" class="subject" value="Jest"> Jest
-                </label>
-                <label for="Pro">
-                    <input id="Pro" type="checkbox" class="subject" value="Promises"> Promises
-                </label>
-                <label for="Re">
-                    <input id="Re" type="checkbox" class="subject" value="React"> React
-                </label>
-                <label for="SQL">
-                    <input id="SQL" type="checkbox" class="subject" value="SQL"> SQL
-                </label>
-                <label for="Python">
-                    <input id="Python" type="checkbox" class="subject" value="Python"> Python
-                </label>
-            </section>
-            <section>
+            <hr>
+            <div class="container">
+                <section id="familia">
+                    <label id="label-family">Qual sua família?</label>
+                    <label for="Fron">
+                        <input id="Fron" type="radio" name="family" value="Frontend"> Frontend
+                    </label>
+                    <label for="Bac">
+                        <input id="Bac" type="radio" name="family" value="Backend"> Backend
+                    </label>
+                    <label for="Ful">
+                        <input id="Ful" type="radio" name="family" value="FullStack"> FullStack
+                    </label>
+                </section>
+                <section id="conteudo">
+                    <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <div class="check-grid">
+                        <div>
+                            <input id="Ho" type="checkbox" class="subject" value="HoFs">
+                            <label for="Ho">Hofs</label>
+                        </div>
+                        <div>
+                            <input id="Je" type="checkbox" class="subject" value="Jest">
+                            <label for="Je">Jest</label>
+                        </div>
+                        <div>
+                            <input id="Pro" type="checkbox" class="subject" value="Promises">
+                            <label for="Pro">Promises</label>
+                        </div>
+                        <div>
+                            <input id="Re" type="checkbox" class="subject" value="React">
+                            <label for="Re">React</label>
+                        </div>
+                        <div>
+                            <input id="SQL" type="checkbox" class="subject" value="SQL">
+                            <label for="SQL">SQL</label>
+                        </div>
+                        <div>
+                            <input id="Python" type="checkbox" class="subject" value="Python">
+                            <label for="Python">Python</label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <hr>
+            <section id="nota">
                 <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
                 <label for="">
                     <input type="radio" name="rate" value="1">1

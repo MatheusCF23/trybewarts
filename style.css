@@ -67,16 +67,21 @@ textarea {
   width: 48%;
 }
 
-.field-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.select-container {
+.container {
   display: flex;
   justify-content: space-between;
 }
 
 select {
   width: 85%;
+}
+
+#familia {
+  display: flex;
+  flex-direction: column;
+}
+
+.check-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
