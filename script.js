@@ -11,7 +11,7 @@ function loginTryber() {
 
 document.getElementById('loginBTN').addEventListener('click', loginTryber);
 
-  for(let index = 1; index < 11; index += 1) {
+for (let index = 1; index < 11; index += 1) {
   const div = document.createElement('div');
   document.getElementById('nota').appendChild(div);
   const input = document.createElement('input');
@@ -32,9 +32,9 @@ document.getElementById('agreement').addEventListener('change', function (event)
   } else {
     document.getElementById('submit-btn').disabled = true;
   }
-})
+});
 
 document.getElementById('comentario').addEventListener('input', function (event) {
   const counter = document.getElementById('counter');
-  counter.innerText = 500-Number(event.target.value.length)
-})
+  counter.innerText = 500 - Number(event.target.value.length);
+});
