@@ -9,7 +9,8 @@ function loginTryber() {
   }
 }
 
-document.getElementById('loginBTN').addEventListener('click', loginTryber);
+const loginBTN = document.getElementById('loginBTN');
+loginBTN.addEventListener('click', loginTryber);
 
 for (let index = 1; index < 11; index += 1) {
   const div = document.createElement('div');
@@ -26,7 +27,8 @@ for (let index = 1; index < 11; index += 1) {
   div.appendChild(label);
 }
 
-document.getElementById('agreement').addEventListener('change', function (event) {
+const agreement = document.getElementById('agreement');
+agreement.addEventListener('change', function (event) {
   if (event.target.checked === true) {
     document.getElementById('submit-btn').disabled = false;
   } else {
