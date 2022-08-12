@@ -25,3 +25,11 @@ for(let index=1; index<11; index+=1) {
     label.innerText = index;
     div.appendChild(label);
 }
+
+document.getElementById('agreement').addEventListener('change', function (event) {
+    if(event.target.checked === true) {
+        document.getElementById('submit-btn').disabled = false;
+    } else {
+        document.getElementById('submit-btn').disabled = true;
+    }
+})
