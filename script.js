@@ -36,8 +36,8 @@ agreement.addEventListener('change', function (event) {
   }
 });
 
+document.getElementById('textarea').addEventListener('input', function (event) {
 
-document.getElementById('comentario').addEventListener('input', function (event) {
   const counter = document.getElementById('counter');
   counter.innerText = 500 - Number(event.target.value.length);
 });
