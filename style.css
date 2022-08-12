@@ -61,6 +61,7 @@ main {
 
 textarea {
   resize: none;
+  width: 100%;
 }
 
 .eval-input {
@@ -107,4 +108,14 @@ footer {
   position: fixed;
   bottom: 0;
   padding: 15px;
+}
+
+#counter {
+  position: absolute;
+  bottom: 1%;
+  right: 0.5%;
+}
+
+.comentario {
+  position: relative;
 }

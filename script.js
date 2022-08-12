@@ -33,3 +33,8 @@ document.getElementById('agreement').addEventListener('change', function (event)
         document.getElementById('submit-btn').disabled = true;
     }
 })
+
+document.getElementById('comentario').addEventListener('input', function (event) {
+    let counter = document.getElementById('counter');
+    counter.innerText = 500-Number(event.target.value.length)
+})
