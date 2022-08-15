@@ -23,13 +23,13 @@
     <main>
         <form action="" id="evaluation-form">
             <div class="container">
-                <input class="eval-input" id="input-name" placeholder="Nome" type="text">
-                <input class="eval-input" id="input-lastname" placeholder="Sobrenome" type="text">
+                <input name="nome" class="eval-input" id="input-name" placeholder="Nome" type="text">
+                <input name="sobrenome" class="eval-input" id="input-lastname" placeholder="Sobrenome" type="text">
             </div>
             <div class="container">
-                <input class="eval-input" id="input-email" placeholder="Email" type="email">
+                <input name="email" class="eval-input" id="input-email" placeholder="Email" type="email">
                 <div class="eval-input select-container">
-                    <label class="label" for="house">Casa</label>
+                    <label class="label" for="house">Casa:</label>
                     <select name="house" id="house">
                         <option id="gitnoria-house" value="Gitnória">Gitnória</option>
                         <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -56,27 +56,27 @@
                     <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
                     <div class="check-grid">
                         <div>
-                            <input id="Ho" type="checkbox" class="subject" value="HoFs">
+                            <input name="subject" id="Ho" type="checkbox" class="subject" value="HoFs">
                             <label for="Ho">Hofs</label>
                         </div>
                         <div>
-                            <input id="Je" type="checkbox" class="subject" value="Jest">
+                            <input name="subject" id="Je" type="checkbox" class="subject" value="Jest">
                             <label for="Je">Jest</label>
                         </div>
                         <div>
-                            <input id="Pro" type="checkbox" class="subject" value="Promises">
+                            <input name="subject" id="Pro" type="checkbox" class="subject" value="Promises">
                             <label for="Pro">Promises</label>
                         </div>
                         <div>
-                            <input id="Re" type="checkbox" class="subject" value="React">
+                            <input name="subject" id="Re" type="checkbox" class="subject" value="React">
                             <label for="Re">React</label>
                         </div>
                         <div>
-                            <input id="SQL" type="checkbox" class="subject" value="SQL">
+                            <input name="subject" id="SQL" type="checkbox" class="subject" value="SQL">
                             <label for="SQL">SQL</label>
                         </div>
                         <div>
-                            <input id="Python" type="checkbox" class="subject" value="Python">
+                            <input name="subject" id="Python" type="checkbox" class="subject" value="Python">
                             <label for="Python">Python</label>
                         </div>
                     </div>
@@ -86,20 +86,28 @@
             <section id="nota">
                 <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
             </section>
-                <label class="textarea" for="comentario">Deixe seu comentário:</label>
-                <div class="comentario">
-                    <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-                    <p id="counter">500</p>
-                </div>
+            <label class="textarea" for="comentario">Deixe seu comentário:</label>
+            <div class="comentario">
+                <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+                <p id="counter">500</p>
+            </div>
             <div id="informacoes">
                 <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
                 <input id="agreement" type="checkbox">
             </div>
-            <button id="submit-btn" type="submit" disabled>Enviar</button>
+            <button type="submit" id="submit-btn" disabled>Enviar</button>
+        </form>
+        <form action="#" id="form-data">
+                <p id="nome"></p>
+                <p id="email"></p>
+                <p id="casa"></p>
+                <p id="family"></p>
+                <p id="materias"></p>
+                <p id="avaliacao"></p>
+                <p id="observacoes"></p>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
     </main>
-    
     <footer>
         <p>Direitos reservados à Trybewarts©</p>
     </footer>
