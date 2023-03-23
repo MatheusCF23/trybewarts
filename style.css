@@ -123,6 +123,7 @@ footer {
   width: 100vw;
   background-color: rgb(50, 167, 145);
   color: white;
+  text-align: center;
 }
 
 #counter {
